@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlideDish - Fresh Baked Bread</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-left">
+        <i data-lucide="menu" class="icon"></i>
+        <div class="location">
+          <i data-lucide="map-pin" class="icon-small"></i>
+          <span>Grand City, MI</span>
+        </div>
+      </div>
+      <div class="logo">
+        <i data-lucide="shopping-bag" class="icon-small"></i>
+        <span>SlideDish </span>
+      </div>
+      <div class="header-right">
+        <i data-lucide="bell" class="icon"></i>
+      </div>
+    </header>
+    <main class="container">
+      <div class="hero">
+        <h1>Freshly Baked Bread Every Day!</h1>
+        <p>Fresh ingredients delivered to craft, handmade pure fresh bread and other soft treats.</p>
+      </div>
+      <div class="category-filter" id="category-filter">
+        <!-- Categories will be populated by JavaScript -->
+      </div>
+      <div class="product-carousel">
+        <div class="carousel-container">
+          <div class="carousel-track" id="product-carousel">
+            <!-- Products will be populated by JavaScript -->
+          </div>
+        </div>
+        <button class="carousel-nav carousel-prev">
+          <i data-lucide="chevron-left" class="icon-small"></i>
+        </button>
+        <button class="carousel-nav carousel-next">
+          <i data-lucide="chevron-right" class="icon-small"></i>
+        </button>
+      </div>
+      <div class="featured-image">
+        <img
+          src="./assets/img/bandeja.png"
+          alt="Assorted pastries on wooden board"
+        />
+        <!-- <img
+          src="https://images.unsplash.com/photo-1586444248879-bc604bc77f85?q=80&w=1000&auto=format&fit=crop"
+          alt="Assorted pastries on wooden board"
+        /> -->
+      </div>
+      <div class="order-button-container">
+        <button class="order-button">
+          Review Order
+          <i data-lucide="arrow-right" class="icon-small"></i>
+        </button>
+      </div>
+    </main>
+  </div>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
